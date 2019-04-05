@@ -16,8 +16,10 @@ jobs:
           paths:
             - .
   deploy:
+    executor: node-machine
     steps:
       - checkout
+
 workflows:
   version: 2
   build_test_deploy:
