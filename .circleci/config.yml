@@ -29,5 +29,7 @@ workflows:
           requires:
             - checkout_code
           filters:
+            branches:
+              ignore: /.*/
             tags:
               only: /^\d{4}-\d{2}-\d{2}-v\d+$/
