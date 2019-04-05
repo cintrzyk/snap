@@ -25,7 +25,7 @@ workflows:
   build_test_deploy:
     jobs:
       - checkout_code
-      - build:
+      - deploy:
           requires:
             - checkout_code
           filters:
